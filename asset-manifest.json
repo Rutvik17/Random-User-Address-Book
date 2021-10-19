@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Random-User-Address-Book/static/css/main.a046f2dc.chunk.css",
+    "main.css": "/Random-User-Address-Book/static/css/main.cf89b6ce.chunk.css",
     "main.js": "/Random-User-Address-Book/static/js/main.be6c093c.chunk.js",
     "main.js.map": "/Random-User-Address-Book/static/js/main.be6c093c.chunk.js.map",
     "runtime-main.js": "/Random-User-Address-Book/static/js/runtime-main.81c14414.js",
@@ -10,13 +10,13 @@
     "static/js/3.b4fb502d.chunk.js": "/Random-User-Address-Book/static/js/3.b4fb502d.chunk.js",
     "static/js/3.b4fb502d.chunk.js.map": "/Random-User-Address-Book/static/js/3.b4fb502d.chunk.js.map",
     "index.html": "/Random-User-Address-Book/index.html",
-    "static/css/main.a046f2dc.chunk.css.map": "/Random-User-Address-Book/static/css/main.a046f2dc.chunk.css.map",
+    "static/css/main.cf89b6ce.chunk.css.map": "/Random-User-Address-Book/static/css/main.cf89b6ce.chunk.css.map",
     "static/js/2.6f8d591f.chunk.js.LICENSE.txt": "/Random-User-Address-Book/static/js/2.6f8d591f.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.81c14414.js",
     "static/js/2.6f8d591f.chunk.js",
-    "static/css/main.a046f2dc.chunk.css",
+    "static/css/main.cf89b6ce.chunk.css",
     "static/js/main.be6c093c.chunk.js"
   ]
 }
