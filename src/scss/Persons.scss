@@ -58,7 +58,7 @@
     padding: 15px 15px 20px;
     display: grid;
     row-gap: 8px;
-    height: 80vh;
+    height: 70vh;
     overflow: scroll;
   }
 
@@ -73,7 +73,7 @@
     cursor: pointer;
     transition: transform .25s cubic-bezier(.7,.98,.86,.98), box-shadow .25s cubic-bezier(.7,.98,.86,.98);
     background-color: #fff;
-    height: 70px;
+    height: fit-content;
 
     &:hover {
       transform: scale(1.2);
