@@ -9,8 +9,9 @@ import {useSelector} from "./redux/Store";
 function App() {
     const dispatch =                        useDispatch();
     const loadMoreUsers =                   useSelector((state) => state.system.loadMoreUsers);
+    const [currentPage, setCurrentPage] =   React.useState(1);
     const fetchRandomUsers = React.useCallback(() => {
-        fetch('https://randomuser.me/api/?results=10')
+        fetch(`https://randomuser.me/api/?page=${currentPage}&results=10&seed=abc`)
             .then((response) => {
                 if (response.ok) {
                     return response.json();
@@ -18,6 +19,7 @@ function App() {
                 throw response;
             })
             .then((data) => {
+                console.log(data)
                 dispatch(setRandomUsers(data.results));
             })
             .catch((error) => {
@@ -27,17 +29,18 @@ function App() {
                 dispatch(setLoading(false));
                 dispatch(setLoadMoreUsers(false));
             });
-    }, [dispatch]);
+    }, [dispatch, currentPage]);
     React.useEffect(() => {
         fetchRandomUsers();
     }, [fetchRandomUsers]);
     React.useEffect(() => {
         if (loadMoreUsers) {
+            setCurrentPage(currentPage + 1);
             setTimeout(() => {
                 fetchRandomUsers();
             }, 1000);
         }
-    }, [fetchRandomUsers, loadMoreUsers]);
+    }, [loadMoreUsers]);
   return (
       <BrowserRouter>
         <Suspense fallback={<></>}>
